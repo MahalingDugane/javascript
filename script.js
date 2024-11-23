@@ -85,20 +85,8 @@ if(age>18){
 
 */
 
-//  Odd or Even 
+let fullname=prompt("Enter the your Name :");
 
-let n=prompt("Enter your score :");
-let g;
- if(n>=100 && n<=90){
-   g="A";
- }
- else if(n>=89 && n<=70){
-    g="B";
+let username="@"+fullname+fullname.length;
 
- }else if(n>=59 && n>= 50){
-      g="D"
- }else if(n>=0 && n<=49){
-     g="F";
- }
-
- console.log("Scores :" ,g);
+console.log(username);

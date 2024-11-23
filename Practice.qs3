@@ -1,0 +1,10 @@
+
+// Game Demo
+
+let gameNum=25;
+let userNum=prompt("Guess the number :");
+
+while(gameNum !=userNum){
+    userNum=prompt("Your entered wrong no. guess again : ");
+}
+console.log("Congratulation right number ");
