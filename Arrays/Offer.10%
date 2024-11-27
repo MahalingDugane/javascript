@@ -1,0 +1,9 @@
+
+
+let item=[250,645,300,900,50];
+for(let i=0;i<item.length;i++){
+    console.log(`All item s =${item[i]}`);
+    let offer=item[i]/10;
+    item[i]-=offer;
+}
+console.log(`offers All =${item}`);

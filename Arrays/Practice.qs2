@@ -1,0 +1,9 @@
+// create the user name 
+
+
+
+let fullname=prompt("Enter the your Name :");
+
+let username="@"+fullname+fullname.length;
+
+console.log(username);

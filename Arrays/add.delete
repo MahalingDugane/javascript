@@ -1,0 +1,5 @@
+let compuny=["Bloomberg","Micrsoft","Uber","Google","IBM","Nextflix"];
+
+compuny.shift();
+compuny.splice(2,1,"OLaa");
+compuny.push("Amazon");
