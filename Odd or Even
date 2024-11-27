@@ -1,9 +1,0 @@
-let num=10;
-
-  let sum=num%2;
-  if(sum===0){
-    console.log("Even");
-
-  }else{
-    console.log("Odd");
-  }

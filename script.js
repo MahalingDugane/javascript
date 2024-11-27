@@ -1,92 +1,49 @@
-/*    Logical Operators
 
-let a=4;
-let b=6;
-console.log("a+b=",+a+b);
-console.log("a-b=",+a-b);
-console.log("a/b=",+a/b);
-console.log("a%b=",+a%b);
-console.log("a*b",a*b);
 
+/*let Heading = document.getElementById("heading");
+
+console.dir(Heading);
 */
 
-//    Urinary Operator
 /*
-let a=5;
-let b=2;
+let h1=document.querySelector("h1");
 
-console.log("a=",a);
-console.log("b=",b);
+console.dir(h1.innerText);
 
-console.log("++a",++a);
-console.log("--a",--a);
+h1.innerText=h1.innerText+"From Apana Collage Student";
 
 */
 
-/*     Assigment Operators
 
-let a=5;
-let b=4;
-a **=b;
-console.log("a=",a);
-
-*/
-
-//    Comparision Operators
 /*
-let a=5;
-let b=2;
+let newbtn=document.createElement("button");
+newbtn.innerHTML="click me!";
 
-console.log("a==b",a==b);
-console.log("!=",a!=b);
-console.log("a===b",a===b);
-console.log("a!==",a!==b);
-*/
+newbtn.style.color="white";
+newbtn.style.backgroundColor="red";
 
-
-//    Logical Operator
-/*
-
-let a=5;
-let b=2;
-
-let cond1=a<b;
-let cond2=a===5;
-console.log(cond1 && cond2);
-console.log(cond1 || a==5);
+document.querySelector("body").prepend(newbtn);
 
 */
 
-/*   codition Statements 
+let modebtn=document.querySelector("#mode");
+let body=document.querySelector("body");
+let currMode="light";  //dark
 
+modebtn.addEventListener("click",()=>{
 
-let mode = "light";
-let color;
+    if(currMode==="light"){
+        currMode="Dark";
 
+        body.classList.add("dark");
+        body.classList.remove("light");
 
-if(mode==="black"){
-    color="black";
+    }else{
 
-}else{
-   color="white";
-}
-console.log(color);
+        currMode="light";
+       body.classList.add("light");
+       body.classList.remove("Dark");
+    }
+    console.log(currMode);
 
-*/  
-/* else if codition
-
-let age=25;
-
-if(age>18){
-    console.log("Vote");
-}else{
-    console.log("Not vote");
-}
-
-*/
-
-let fullname=prompt("Enter the your Name :");
-
-let username="@"+fullname+fullname.length;
-
-console.log(username);
+})
